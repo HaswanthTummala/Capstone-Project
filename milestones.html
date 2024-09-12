@@ -11,22 +11,36 @@
     <!-- Navigation Bar -->
     <nav>
         <div class="nav-container">
-            <ul>
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#deliverables">Deliverables</a></li>
                 <li><a href="milestones.html">Milestones</a></li>
                 <li><a href="reports.html">Meeting Reports</a></li>
                 <li><a href="project.html">Project</a></li>
-
-               
             </ul>
         </div>
         <div class="hero">
             <h1>Natural Language Processing to Motivate Expressive Language Development</h1><br>
-            <h4 style="display: center;">Android Application</h4>
-            
+            <h4>Android Application</h4>
         </div>
     </nav>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
     <br>
     <style>
         /* Profile Section */
@@ -120,7 +134,7 @@
          
       </div>
       <div class="profile-card">
-        <h3>Object Gesture Control Implementation</h3>
+        <h3>Object Gesture Control Implementation:</h3>
          
       </div>
       <div class="profile-card">
