@@ -11,22 +11,36 @@
     <!-- Navigation Bar -->
     <nav>
         <div class="nav-container">
-            <ul>
+            <div class="logo">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#deliverables">Deliverables</a></li>
                 <li><a href="milestones.html">Milestones</a></li>
                 <li><a href="reports.html">Meeting Reports</a></li>
                 <li><a href="project.html">Project</a></li>
-
-               
             </ul>
         </div>
         <div class="hero">
             <h1>Natural Language Processing to Motivate Expressive Language Development</h1><br>
-            <h4 style="display: center;">Android Application</h4>
-            
+            <h4>Android Application</h4>
         </div>
     </nav>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 
     <!-- Main Section -->
     
@@ -35,17 +49,16 @@
       
         <div class="profile-card">
             <img src="images/bettayeb-said.jpg" alt="Instructor" class="profile-pic">
-            
             <h2>Dr. Said Bettayeb</h2>
             <p class="title">Faculty Instructor</p>
             <p>Email: bettayeb@uhcl.edu</p>
             <p>Contact: 281.283.3717</p>
             <p>Professor of Computer Science and Computer Information Systems,
                 Science and Engineering</p>
+                
         </div>
         <div class="profile-card">
             <img src="images/niswanger-ross.jpg" alt="Mentor" class="profile-pic">
-            
             <h2>Dr.Ross Niswanger</h2>
             <p class="title">Project Mentor</p>
             <p>Email: niswanger@uhcl.edu</p>
